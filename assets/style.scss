@@ -46,7 +46,43 @@
 
         .about-me {
             .me-2 {
-                font-size: 20px;
+                font-size: 16px;
+
+                .thanx{
+                    font-weight: 600;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    .competencies{
+        ul{
+            li{
+                display: flex;
+                margin-left: 4%;
+                line-height: 36px;
+
+                .text{
+                    width: 400px;
+                    text-align: center;
+                }
+                
+                img{
+                    width: 2%;
+                    margin-right: 2%;
+                }
+
+                .star{
+                    display: flex;
+                    align-items: center;
+                    img{
+                        margin-right: 1%;
+                        &:nth-child(1){
+                            margin-left: 2%;
+                        }
+                    }
+                }
             }
         }
     }

@@ -38,7 +38,34 @@
   border-radius: 5%;
 }
 #home .me .about-me .me-2 {
+  font-size: 16px;
+}
+#home .me .about-me .me-2 .thanx {
+  font-weight: 600;
   font-size: 20px;
+}
+#home .competencies ul li {
+  display: flex;
+  margin-left: 4%;
+  line-height: 36px;
+}
+#home .competencies ul li .text {
+  width: 400px;
+  text-align: center;
+}
+#home .competencies ul li img {
+  width: 2%;
+  margin-right: 2%;
+}
+#home .competencies ul li .star {
+  display: flex;
+  align-items: center;
+}
+#home .competencies ul li .star img {
+  margin-right: 1%;
+}
+#home .competencies ul li .star img:nth-child(1) {
+  margin-left: 2%;
 }
 #home .certificate ul li {
   list-style: circle;
