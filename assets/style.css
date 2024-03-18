@@ -89,4 +89,52 @@
 }
 #home .work-history ul li .title {
   color: #519d9e;
+}
+
+#about-me .projects {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+#about-me .projects .card {
+  text-align: center;
+  width: 24.6%;
+  margin: 2%;
+  padding: 0 2% 2% 2%;
+  border: 3px solid gainsboro;
+  border-radius: 6px;
+}
+#about-me .projects .card .project-name {
+  color: #519d9e;
+}
+#about-me .projects .card .go-project {
+  padding: 2% 2% 0 2%;
+  margin-top: 5%;
+}
+#about-me .projects .card .go-project a {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+#contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 2%;
+}
+#contact .social-media {
+  display: flex;
+  flex-direction: column;
+}
+#contact .social-media a {
+  text-decoration: none;
+  text-align: center;
+}
+#contact .social-media a img {
+  width: 30%;
+}
+#contact .social-media .text {
+  font-size: 20px;
+  text-align: center;
+  padding: 2%;
+  color: #519d9e;
 }/*# sourceMappingURL=style.css.map */

@@ -48,7 +48,7 @@
             .me-2 {
                 font-size: 16px;
 
-                .thanx{
+                .thanx {
                     font-weight: 600;
                     font-size: 20px;
                 }
@@ -56,29 +56,29 @@
         }
     }
 
-    .competencies{
-        ul{
-            li{
+    .competencies {
+        ul {
+            li {
                 display: flex;
                 margin-left: 4%;
                 line-height: 36px;
 
-                .text{
+                .text {
                     width: 400px;
                     text-align: center;
                 }
-                
-                img{
+
+                img {
                     width: 2%;
                     margin-right: 2%;
                 }
 
-                .star{
+                .star {
                     display: flex;
                     align-items: center;
-                    img{
+                    img {
                         margin-right: 1%;
-                        &:nth-child(1){
+                        &:nth-child(1) {
                             margin-left: 2%;
                         }
                     }
@@ -87,41 +87,96 @@
         }
     }
 
-    .certificate{
-        ul{
-            li{
+    .certificate {
+        ul {
+            li {
                 list-style: circle;
                 margin-left: 4%;
                 line-height: 36px;
 
-                a{
+                a {
                     text-decoration: none;
                     color: black;
-                }                
+                }
 
-                .teacher{
+                .teacher {
                     color: #519d9e;
                 }
             }
         }
     }
 
-
-    .work-history{
-        ul{
-            li{
+    .work-history {
+        ul {
+            li {
                 list-style: circle;
                 margin-left: 4%;
                 line-height: 36px;
 
-                .date{
+                .date {
                     font-weight: 700;
                 }
 
-                .title{
+                .title {
                     color: #519d9e;
                 }
             }
+        }
+    }
+}
+
+#about-me {
+    .projects {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        .card {
+            text-align: center;
+            width: 24.6%;
+            margin: 2%;
+            padding:0 2% 2% 2%;
+            border: 3px solid gainsboro;
+            border-radius: 6px;
+
+            .project-name{
+                color: #519d9e;
+            }
+
+            
+            .go-project {
+                padding: 2% 2% 0 2%;
+                margin-top: 5%;
+                a {
+                    text-decoration: none;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+#contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 2%;
+
+    .social-media{
+        display: flex;
+        flex-direction: column;
+        a{
+            text-decoration: none;
+            text-align: center;
+
+            img{
+                width: 30%;
+            }
+        }
+
+        .text{
+            font-size: 20px;
+            text-align: center;
+            padding: 2%;
+            color: #519d9e;
         }
     }
 }

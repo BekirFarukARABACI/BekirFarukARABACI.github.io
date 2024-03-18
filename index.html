@@ -1,277 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/style.css">
-    <title>Bekir Faruk ARABACI</title>
-</head>
-<style>
-    .header-wrap .menu {
-  display: flex;
-  justify-content: space-between;
-  padding: 2%;
-  background-color: #9dc8c8;
-  border-radius: 6px;
-}
-.header-wrap .menu .home {
-  text-decoration: none;
-  font-size: 24px;
-  color: #519d9e;
-}
-.header-wrap .menu .menu-2 {
-  display: flex;
-  justify-content: space-between;
-  width: 20%;
-}
-.header-wrap .menu .menu-2 .project {
-  text-decoration: none;
-  font-size: 24px;
-  color: #519d9e;
-}
-.header-wrap .menu .menu-2 .contact {
-  text-decoration: none;
-  font-size: 24px;
-  color: #519d9e;
-}
 
-#home .me {
-  display: flex;
-}
-#home .me .image {
-  width: 100%;
-  padding: 2%;
-}
-#home .me .image img {
-  width: 100%;
-  border-radius: 5%;
-}
-#home .me .about-me .me-2 {
-  font-size: 16px;
-}
-#home .me .about-me .me-2 .thanx {
-  font-weight: 600;
-  font-size: 20px;
-}
-#home .competencies ul li {
-  display: flex;
-  margin-left: 4%;
-  line-height: 36px;
-}
-#home .competencies ul li .text {
-  width: 400px;
-  text-align: center;
-}
-#home .competencies ul li img {
-  width: 2%;
-  margin-right: 2%;
-}
-#home .competencies ul li .star {
-  display: flex;
-  align-items: center;
-}
-#home .competencies ul li .star img {
-  margin-right: 1%;
-}
-#home .competencies ul li .star img:nth-child(1) {
-  margin-left: 2%;
-}
-#home .certificate ul li {
-  list-style: circle;
-  margin-left: 4%;
-  line-height: 36px;
-}
-#home .certificate ul li a {
-  text-decoration: none;
-  color: black;
-}
-#home .certificate ul li .teacher {
-  color: #519d9e;
-}
-#home .work-history ul li {
-  list-style: circle;
-  margin-left: 4%;
-  line-height: 36px;
-}
-#home .work-history ul li .date {
-  font-weight: 700;
-}
-#home .work-history ul li .title {
-  color: #519d9e;
-}/*# sourceMappingURL=style.css.map */
-</style>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/style.css">
+  <title>Bekir Faruk ARABACI</title>
+</head>
+
 
 
 <body>
-    <div class="header-wrap">
-        <div class="menu">
-            <a href="#home" class="home">Ana Sayfa</a>
-            <div class="menu-2">
-                <a href="#about-me" class="project">Projelerim</a>
-                <a href="#contact" class="contact">İletişim</a>
-            </div>
-        </div>
+  <div class="header-wrap">
+    <div class="menu">
+      <a href="#home" onclick="showContent('home')" class="home">Ana Sayfa</a>
+      <div class="menu-2">
+        <a href="#about-me" onclick="showContent('about-me')" class="project">Projelerim</a>
+        <a href="#contact" onclick="showContent('contact')" class="contact">İletişim</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="content" id="home" style="display: none;">
+    <div class="me">
+      <div class="image">
+        <img src="assets/images/me.jpg" alt="">
+      </div>
+      <div class="about-me">
+        <h2 class="title">Bekir Faruk ARABACI</h2>
+        <p class="me-2">
+          Merhabalar. Ben Bekir Faruk ARABACI Konya'nın Beyşehir ilçesinde 2002 yılında doğdum. Şuan Kırklareli
+          Üniversitesi Yazılım Mühendisliği 3. sınıf öğrencisi olmamdan dolayı Kırklareli/Merkez'de ikamet etmekteyim.
+          Üniversite bünyesinde
+          2 senedir 'KLU YAZILIM VE BİLİŞİM' kulübünün başkanlığını yapmaktayım.
+          Üniversite içerisinde bir çok Yazılım Alanını deneyimleme fırsatım oldu.
+          Özellikle WEB FRONT-END alanında kendimi geliştirim. Bunun yanında Python,
+          JAVA , C#, C++, MySQL, JavaScript gibi alanlarda da bilgim bulunmaktadır.
+          Boş zamanlarımda kendimi geliştirmeyi, gezmeyi, kamp yapmayı severim.
+          <br><br><br><br>
+          <span class="thanx">ZİYARET ETTİĞİNİZ İÇİN TEŞEKKÜR EDERİM ...</span>
+        </p>
+      </div>
     </div>
 
-    <div id="home">
-        <div class="me">
-            <div class="image">
-                <img src="assets/images/me.jpg" alt="">
-            </div>
-            <div class="about-me">
-                <h2 class="title">Bekir Faruk ARABACI</h2>
-                <p class="me-2">
-                    Merhabalar.  Ben Bekir Faruk ARABACI Konya'nın Beyşehir ilçesinde 2002 yılında doğdum. Şuan Kırklareli Üniversitesi Yazılım Mühendisliği 3. sınıf öğrencisi olmamdan dolayı Kırklareli/Merkez'de ikamet etmekteyim. Üniversite bünyesinde
-                    2 senedir 'KLU YAZILIM VE BİLİŞİM' kulübünün başkanlığını yapmaktayım.
-                    Üniversite içerisinde bir çok Yazılım Alanını deneyimleme fırsatım oldu. 
-                    Özellikle WEB FRONT-END alanında kendimi geliştirim. Bunun yanında Python,
-                    JAVA , C#, C++, MySQL, JavaScript gibi alanlarda da bilgim bulunmaktadır. 
-                    Boş zamanlarımda kendimi geliştirmeyi, gezmeyi, kamp yapmayı severim.
-                    <br><br><br><br>
-                    <span class="thanx">ZİYARET ETTİĞİNİZ İÇİN TEŞEKKÜR EDERİM ...</span>
-                </p>
-            </div>
-        </div>
-
-        <div class="competencies">
-            <ul><h2>Yetkinliklerim : </h2>
-                <li>
-                    <img src="assets/images/html-5-svgrepo-com.svg"> <span class="text">HTML</span> 
-                    <span class="star">
-                        <img src="assets/images/star-svgrepo-com (1).svg" >
-                        <img src="assets/images/star-svgrepo-com (1).svg" >
-                        <img src="assets/images/star-svgrepo-com (1).svg" >
-                        <img src="assets/images/star-svgrepo-com (1).svg" >
-                        <img src="assets/images/star-svgrepo-com (1).svg" >
-                    </span>
-                </li>
-                <li>
-                    <img src="assets/images/css-3-svgrepo-com.svg"> <span class="text">CSS</span>  
-                    <span class="star">
-                        <img src="assets/images/star-svgrepo-com (1).svg" >
-                        <img src="assets/images/star-svgrepo-com (1).svg" >
-                        <img src="assets/images/star-svgrepo-com (1).svg" >
-                        <img src="assets/images/star-svgrepo-com (1).svg" >
-                        <img src="assets/images/star-svgrepo-com (1).svg" >
-                    </span>
-                </li>
-                <li>
-                    <img src="assets/images/scss2-svgrepo-com.svg"> <span class="text">SCSS</span> 
-                    <span class="star">
-                        <img src="assets/images/star-svgrepo-com (1).svg" >
-                        <img src="assets/images/star-svgrepo-com (1).svg" >
-                        <img src="assets/images/star-svgrepo-com (1).svg" >
-                        <img src="assets/images/star-svgrepo-com (1).svg" >
-                        <img src="assets/images/star-svgrepo-com (1).svg" >
-                    </span>
-                </li>
-                <li>
-                    <img src="assets/images/bootstrap-svgrepo-com.svg"> <span class="text">BOOTSRTRAP</span> 
-                    <span class="star">
-                        <img src="assets/images/star-svgrepo-com (1).svg" >
-                        <img src="assets/images/star-svgrepo-com (1).svg" >
-                        <img src="assets/images/star-svgrepo-com (1).svg" >
-                        <img src="assets/images/star-svgrepo-com (1).svg" >
-                        <img src="assets/images/star-svgrepo-com (2).svg" >
-                    </span>
-                </li>
-                <li>
-                    <img src="assets/images/javascript-svgrepo-com.svg"> <span class="text">JAVASCRİPT</span> 
-                    <span class="star">
-                        <img src="assets/images/star-svgrepo-com (1).svg" >
-                        <img src="assets/images/star-svgrepo-com (1).svg" >
-                        <img src="assets/images/star-svgrepo-com (1).svg" >
-                        <img src="assets/images/star-svgrepo-com (1).svg" >
-                        <img src="assets/images/star-svgrepo-com (2).svg" >
-                    </span>
-                </li>
-                <li>
-                    <img src="assets/images/java-svgrepo-com.svg"> <span class="text">JAVA</span> 
-                    <span class="star">
-                        <img src="assets/images/star-svgrepo-com (1).svg" >
-                        <img src="assets/images/star-svgrepo-com (1).svg" >
-                        <img src="assets/images/star-svgrepo-com (2).svg" >
-                        <img src="assets/images/star-svgrepo-com (2).svg" >
-                        <img src="assets/images/star-svgrepo-com (2).svg" >
-                    </span>
-                </li>
-                <li>
-                    <img src="assets/images/kotlin-1-logo-svgrepo-com.svg"> <span class="text">KOTLİN</span> 
-                    <span class="star">
-                        <img src="assets/images/star-svgrepo-com (1).svg" >
-                        <img src="assets/images/star-svgrepo-com (1).svg" >
-                        <img src="assets/images/star-svgrepo-com (2).svg" >
-                        <img src="assets/images/star-svgrepo-com (2).svg" >
-                        <img src="assets/images/star-svgrepo-com (2).svg" >
-                    </span>
-                </li>
-                <li>
-                    <img src="assets/images/python-svgrepo-com.svg"> <span class="text">PYTHON</span> 
-                    <span class="star">
-                        <img src="assets/images/star-svgrepo-com (1).svg" >
-                        <img src="assets/images/star-svgrepo-com (1).svg" >
-                        <img src="assets/images/star-svgrepo-com (1).svg" >
-                        <img src="assets/images/star-svgrepo-com (2).svg" >
-                        <img src="assets/images/star-svgrepo-com (2).svg" >
-                    </span>
-                </li>
-                <li>
-                    <img src="assets/images/mysql-logo-svgrepo-com.svg"> <span class="text">MYSQL</span> 
-                    <span class="star">
-                        <img src="assets/images/star-svgrepo-com (1).svg" >
-                        <img src="assets/images/star-svgrepo-com (1).svg" >
-                        <img src="assets/images/star-svgrepo-com (1).svg" >
-                        <img src="assets/images/star-svgrepo-com (2).svg" >
-                        <img src="assets/images/star-svgrepo-com (2).svg" >
-                    </span>
-                </li>
-                <li>
-                    <img src="assets/images/icons8-c++-240.svg"> <span class="text">C++</span> 
-                    <span class="star">
-                        <img src="assets/images/star-svgrepo-com (1).svg" >
-                        <img src="assets/images/star-svgrepo-com (1).svg" >
-                        <img src="assets/images/star-svgrepo-com (1).svg" >
-                        <img src="assets/images/star-svgrepo-com (2).svg" >
-                        <img src="assets/images/star-svgrepo-com (2).svg" >
-                    </span>
-                </li>
-                <li>
-                    <img src="assets/images/icons8-c.svg"> <span class="text">C#</span>
-                    <span class="star">
-                        <img src="assets/images/star-svgrepo-com (1).svg" >
-                        <img src="assets/images/star-svgrepo-com (1).svg" >
-                        <img src="assets/images/star-svgrepo-com (1).svg" >
-                        <img src="assets/images/star-svgrepo-com (2).svg" >
-                        <img src="assets/images/star-svgrepo-com (2).svg" >
-                    </span>
-                </li>
-            </ul>
-        </div>
-
-        <div class="certificate">
-            <ul><h2>Sertifikalarım : </h2>
-                <li>
-                    <a target="_blank" href="https://udemy-certificate.s3.amazonaws.com/image/UC-3b6b7293-b29e-429d-8641-cdf4959fb04b.jpg">
-                        SIFIRDAN HTML5, CSS3 ve BOOTSRTRAP Öğren <span class="teacher">İlyas Dağdelen</span>
-                    </a>
-                </li>
-                <li>
-                    Bilgisayar İşletmenliği (Operatörlüğü) <span class="teacher">KIRKLARELİ HALK EĞİTİM MERKEZİ</span>
-                </li>
-            </ul>
-        </div>
-
-        <div class="work-history">
-            <ul><h2>İş Geçmişim : </h2>
-                <li>
-                    <span class="date">2023/01 - 2023-07</span> <span class="title">FRONT-END DEVELOPER</span> PİNABİ DİJİTAL HİZMETLER ANONİM ŞİRKETİ
-                </li>
-                <li>
-                    <span class="date">2023/12 - Halen</span> <span class="title">FRONT-END DEVELOPER</span> ACİLLAZIM.COM
-                </li>
-            </ul>
-
-        </div>
+    <div class="competencies">
+      <ul>
+        <h2>Yetkinliklerim : </h2>
+        <li>
+          <img src="assets/images/html-5-svgrepo-com.svg"> <span class="text">HTML</span>
+          <span class="star">
+            <img src="assets/images/star-svgrepo-com (1).svg">
+            <img src="assets/images/star-svgrepo-com (1).svg">
+            <img src="assets/images/star-svgrepo-com (1).svg">
+            <img src="assets/images/star-svgrepo-com (1).svg">
+            <img src="assets/images/star-svgrepo-com (1).svg">
+          </span>
+        </li>
+        <li>
+          <img src="assets/images/css-3-svgrepo-com.svg"> <span class="text">CSS</span>
+          <span class="star">
+            <img src="assets/images/star-svgrepo-com (1).svg">
+            <img src="assets/images/star-svgrepo-com (1).svg">
+            <img src="assets/images/star-svgrepo-com (1).svg">
+            <img src="assets/images/star-svgrepo-com (1).svg">
+            <img src="assets/images/star-svgrepo-com (1).svg">
+          </span>
+        </li>
+        <li>
+          <img src="assets/images/scss2-svgrepo-com.svg"> <span class="text">SCSS</span>
+          <span class="star">
+            <img src="assets/images/star-svgrepo-com (1).svg">
+            <img src="assets/images/star-svgrepo-com (1).svg">
+            <img src="assets/images/star-svgrepo-com (1).svg">
+            <img src="assets/images/star-svgrepo-com (1).svg">
+            <img src="assets/images/star-svgrepo-com (1).svg">
+          </span>
+        </li>
+        <li>
+          <img src="assets/images/bootstrap-svgrepo-com.svg"> <span class="text">BOOTSRTRAP</span>
+          <span class="star">
+            <img src="assets/images/star-svgrepo-com (1).svg">
+            <img src="assets/images/star-svgrepo-com (1).svg">
+            <img src="assets/images/star-svgrepo-com (1).svg">
+            <img src="assets/images/star-svgrepo-com (1).svg">
+            <img src="assets/images/star-svgrepo-com (2).svg">
+          </span>
+        </li>
+        <li>
+          <img src="assets/images/javascript-svgrepo-com.svg"> <span class="text">JAVASCRİPT</span>
+          <span class="star">
+            <img src="assets/images/star-svgrepo-com (1).svg">
+            <img src="assets/images/star-svgrepo-com (1).svg">
+            <img src="assets/images/star-svgrepo-com (1).svg">
+            <img src="assets/images/star-svgrepo-com (1).svg">
+            <img src="assets/images/star-svgrepo-com (2).svg">
+          </span>
+        </li>
+        <li>
+          <img src="assets/images/java-svgrepo-com.svg"> <span class="text">JAVA</span>
+          <span class="star">
+            <img src="assets/images/star-svgrepo-com (1).svg">
+            <img src="assets/images/star-svgrepo-com (1).svg">
+            <img src="assets/images/star-svgrepo-com (2).svg">
+            <img src="assets/images/star-svgrepo-com (2).svg">
+            <img src="assets/images/star-svgrepo-com (2).svg">
+          </span>
+        </li>
+        <li>
+          <img src="assets/images/kotlin-1-logo-svgrepo-com.svg"> <span class="text">KOTLİN</span>
+          <span class="star">
+            <img src="assets/images/star-svgrepo-com (1).svg">
+            <img src="assets/images/star-svgrepo-com (1).svg">
+            <img src="assets/images/star-svgrepo-com (2).svg">
+            <img src="assets/images/star-svgrepo-com (2).svg">
+            <img src="assets/images/star-svgrepo-com (2).svg">
+          </span>
+        </li>
+        <li>
+          <img src="assets/images/python-svgrepo-com.svg"> <span class="text">PYTHON</span>
+          <span class="star">
+            <img src="assets/images/star-svgrepo-com (1).svg">
+            <img src="assets/images/star-svgrepo-com (1).svg">
+            <img src="assets/images/star-svgrepo-com (1).svg">
+            <img src="assets/images/star-svgrepo-com (2).svg">
+            <img src="assets/images/star-svgrepo-com (2).svg">
+          </span>
+        </li>
+        <li>
+          <img src="assets/images/mysql-logo-svgrepo-com.svg"> <span class="text">MYSQL</span>
+          <span class="star">
+            <img src="assets/images/star-svgrepo-com (1).svg">
+            <img src="assets/images/star-svgrepo-com (1).svg">
+            <img src="assets/images/star-svgrepo-com (1).svg">
+            <img src="assets/images/star-svgrepo-com (2).svg">
+            <img src="assets/images/star-svgrepo-com (2).svg">
+          </span>
+        </li>
+        <li>
+          <img src="assets/images/icons8-c++-240.svg"> <span class="text">C++</span>
+          <span class="star">
+            <img src="assets/images/star-svgrepo-com (1).svg">
+            <img src="assets/images/star-svgrepo-com (1).svg">
+            <img src="assets/images/star-svgrepo-com (1).svg">
+            <img src="assets/images/star-svgrepo-com (2).svg">
+            <img src="assets/images/star-svgrepo-com (2).svg">
+          </span>
+        </li>
+        <li>
+          <img src="assets/images/icons8-c.svg"> <span class="text">C#</span>
+          <span class="star">
+            <img src="assets/images/star-svgrepo-com (1).svg">
+            <img src="assets/images/star-svgrepo-com (1).svg">
+            <img src="assets/images/star-svgrepo-com (1).svg">
+            <img src="assets/images/star-svgrepo-com (2).svg">
+            <img src="assets/images/star-svgrepo-com (2).svg">
+          </span>
+        </li>
+      </ul>
     </div>
+
+    <div class="certificate">
+      <ul>
+        <h2>Sertifikalarım : </h2>
+        <li>
+          <a target="_blank"
+            href="https://udemy-certificate.s3.amazonaws.com/image/UC-3b6b7293-b29e-429d-8641-cdf4959fb04b.jpg">
+            SIFIRDAN HTML5, CSS3 ve BOOTSRTRAP Öğren <span class="teacher">İlyas Dağdelen</span>
+          </a>
+        </li>
+        <li>
+          Bilgisayar İşletmenliği (Operatörlüğü) <span class="teacher">KIRKLARELİ HALK EĞİTİM MERKEZİ</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="work-history">
+      <ul>
+        <h2>İş Geçmişim : </h2>
+        <li>
+          <span class="date">2023/01 - 2023-07</span> <span class="title">FRONT-END DEVELOPER</span> PİNABİ DİJİTAL
+          HİZMETLER ANONİM ŞİRKETİ
+        </li>
+        <li>
+          <span class="date">2023/12 - Halen</span> <span class="title">FRONT-END DEVELOPER</span> ACİLLAZIM.COM
+        </li>
+      </ul>
+
+    </div>
+  </div>
+
+  <div class="content" id="about-me" style="display: none;">
+    <div class="projects">
+      <div class="card">
+        <div class="project-name">
+          <h3>Weather App</h3>
+        </div>
+        <div class="project-explan">
+          OpenWeather API kullanarak basit bir hava durumu sitesi
+        </div>
+        <div class="go-project">
+          <a href="https://github.com/BekirFarukARABACI/Weather-App">github.com</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="project-name">
+          <h3>Instagram Clone</h3>
+        </div>
+        <div class="project-explan">
+          Kotlin kullanarak kullanıcı girişi, Firebase üzerinden verileri çekme, veri yükleme
+          gibi özelliklerin olduğu basit bir uygulama
+
+        </div>
+        <div class="go-project">
+          <a href="https://github.com/BekirFarukARABACI/Instagram_Clone">github.com</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="project-name">
+          <h3>Student Works</h3>
+        </div>
+        <div class="project-explan">
+          C# ve MySQL kullanılarak öğrenci ekleme, görüntüleme, silme, düzenleme yapılabilen bir form uygulaması 
+        </div>
+        <div class="go-project">
+          <a href="https://github.com/BekirFarukARABACI/Student_Works">github.com</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="project-name">
+          <h3>Is The Number Prime?</h3>
+        </div>
+        <div class="project-explan">
+          Java ile geliştirmiş olduğum sayı tahmin etme oyunu
+        </div>
+        <div class="go-project">
+          <a href="https://github.com/BekirFarukARABACI/Student_Works">github.com</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="project-name">
+          <h3>Tüm Repositorilerim</h3>
+        </div>
+        <div class="project-explan">
+          Daha fazlasına erişmek için ....
+        </div>
+        <div class="go-project">
+          <a href="https://github.com/BekirFarukARABACI?tab=repositories">github.com</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="content" id="contact" >
+    <div class="social-media instagram">
+      <a href="https://www.instagram.com/bekirfaruk.arabaci/?next=%2F">
+        <img src="assets/images/instagram-1-svgrepo-com.svg" >
+      </a>
+      <span class="text">instagram</span>
+    </div>
+    <div class="social-media linkedin">
+      <a href="https://www.linkedin.com/in/bekir-faruk-arabaci-4b7595289/"><img src="assets/images/linkedin-svgrepo-com.svg" ></a>
+      <span class="text">LinkedIn</span>
+    </div>
+    <div class="social-media mail">
+      <a href="mailto:bekirfaruk.arabaci@hotmail.com"><img src="assets/images/mail-svgrepo-com.svg" ></a>
+      <span class="text">E-Posta gönder</span>
+    </div>
+  </div>
+
+
+  <script>
+    function showContent(contentId) {
+      // Tüm içerikleri gizle
+      var contents = document.getElementsByClassName('content');
+      for (var i = 0; i < contents.length; i++) {
+        contents[i].style.display = 'none';
+      }
+
+      // Belirli içeriği göster
+      var selectedContent = document.getElementById(contentId);
+      selectedContent.style.display = 'block';
+    }
+  </script>
 </body>
+
 </html>
