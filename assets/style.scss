@@ -1,0 +1,91 @@
+.header-wrap {
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        padding: 2%;
+        background-color: #9dc8c8;
+        border-radius: 6px;
+
+        .home {
+            text-decoration: none;
+            font-size: 24px;
+            color: #519d9e;
+        }
+
+        .menu-2 {
+            display: flex;
+            justify-content: space-between;
+            width: 20%;
+            .project {
+                text-decoration: none;
+                font-size: 24px;
+                color: #519d9e;
+            }
+
+            .contact {
+                text-decoration: none;
+                font-size: 24px;
+                color: #519d9e;
+            }
+        }
+    }
+}
+
+#home {
+    .me {
+        display: flex;
+        .image {
+            width: 100%;
+            padding: 2%;
+
+            img {
+                width: 100%;
+                border-radius: 5%;
+            }
+        }
+
+        .about-me {
+            .me-2 {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .certificate{
+        ul{
+            li{
+                list-style: circle;
+                margin-left: 4%;
+                line-height: 36px;
+
+                a{
+                    text-decoration: none;
+                    color: black;
+                }                
+
+                .teacher{
+                    color: #519d9e;
+                }
+            }
+        }
+    }
+
+
+    .work-history{
+        ul{
+            li{
+                list-style: circle;
+                margin-left: 4%;
+                line-height: 36px;
+
+                .date{
+                    font-weight: 700;
+                }
+
+                .title{
+                    color: #519d9e;
+                }
+            }
+        }
+    }
+}

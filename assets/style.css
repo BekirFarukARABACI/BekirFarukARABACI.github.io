@@ -1,0 +1,65 @@
+.header-wrap .menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 2%;
+  background-color: #9dc8c8;
+  border-radius: 6px;
+}
+.header-wrap .menu .home {
+  text-decoration: none;
+  font-size: 24px;
+  color: #519d9e;
+}
+.header-wrap .menu .menu-2 {
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+}
+.header-wrap .menu .menu-2 .project {
+  text-decoration: none;
+  font-size: 24px;
+  color: #519d9e;
+}
+.header-wrap .menu .menu-2 .contact {
+  text-decoration: none;
+  font-size: 24px;
+  color: #519d9e;
+}
+
+#home .me {
+  display: flex;
+}
+#home .me .image {
+  width: 100%;
+  padding: 2%;
+}
+#home .me .image img {
+  width: 100%;
+  border-radius: 5%;
+}
+#home .me .about-me .me-2 {
+  font-size: 20px;
+}
+#home .certificate ul li {
+  list-style: circle;
+  margin-left: 4%;
+  line-height: 36px;
+}
+#home .certificate ul li a {
+  text-decoration: none;
+  color: black;
+}
+#home .certificate ul li .teacher {
+  color: #519d9e;
+}
+#home .work-history ul li {
+  list-style: circle;
+  margin-left: 4%;
+  line-height: 36px;
+}
+#home .work-history ul li .date {
+  font-weight: 700;
+}
+#home .work-history ul li .title {
+  color: #519d9e;
+}/*# sourceMappingURL=style.css.map */
