@@ -278,7 +278,13 @@
 
       // Belirli içeriği göster
       var selectedContent = document.getElementById(contentId);
-      selectedContent.style.display = 'grid';
+
+      if(selectedContent.id == "contact"){
+        selectedContent.style.display = "flex";
+      }else{
+      selectedContent.style.display = 'block';
+
+      }
     }
   </script>
 </body>
